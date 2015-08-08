@@ -1,6 +1,6 @@
 #include "STATION.h"
 
-vector<unsigned int> Station::index_helper_;
+vector<int> Station::index_helper_;
 
 
 unsigned int getQsize(vector<int> & cs){
@@ -51,9 +51,9 @@ double Station::mixedWait(){
 
 
 /*
-int inVector(vector<unsigned int>& lt, int a){
+int inVector(vector<int>& lt, int a){
     bool find = 0, position = 0;
-    for (vector<unsigned int>::iterator it = lt.begin(); (it != lt.end()) && (find == 0); it++){
+    for (vector<int>::iterator it = lt.begin(); (it != lt.end()) && (find == 0); it++){
         position ++;
         if (*it == a)
             find = position;

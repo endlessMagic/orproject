@@ -66,8 +66,8 @@ public:
     Vector4D overtaking_prob_; // comma in old version
 
     //
-    virtual int queue_part_index(unsigned int k, vector<unsigned int>& amounts) = 0;
-    virtual void set_queue_lengths(unsigned int k, vector<unsigned int>& amounts) = 0;
+    virtual int queue_part_index(unsigned int k, vector<int>& amounts) = 0;
+    virtual void set_queue_lengths(unsigned int k, vector<int>& amounts) = 0;
 
 
 
@@ -94,7 +94,7 @@ public:
 
     // helper methods
     // save results, used in solve() and solveMixedNet()
-    //void save(vector<Node> & nodes, vector<unsigned int> & clients, vector<unsigned int>& servers);
+    //void save(vector<Node> & nodes, vector<int> & clients, vector<int>& servers);
 
 
     // used in loop
@@ -102,7 +102,7 @@ public:
     // used in the constructor, resize the output variables(throughputs_, waiting_times_) and the variable population
     void Init();
     // updating the overtaking probilities
-    void UpdateOvertakingProb(vector<unsigned int>& amounts);
+    void UpdateOvertakingProb(vector<int>& amounts);
 
     // K is the number of closed classes
    int K_;

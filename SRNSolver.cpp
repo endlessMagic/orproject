@@ -431,7 +431,7 @@ int SRNSolver::CallClientsCosNum(Task *server){
         for(int i = 0; i < submodel->clients_.size(); ++i){
             client = submodel->clients_[i];
             if(client->hasVisit(server)){
-                num += client->customer_num_;
+                num += client->customer_num();
             }
         }
         return num;
@@ -446,8 +446,8 @@ int SRNSolver::CustomerSize(Task *task){
         if(task->M_==1){
             return 1;
         } else {
-           task->customer_num_ = min ((task->M()), CallClientsCosNum(task));
-           return task->customer_num_;
+           task->set_customer_num( min ((task->M()), CallClientsCosNum(task)) );
+           return task->customer_num();
         }
     }
 }

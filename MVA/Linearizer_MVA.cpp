@@ -105,7 +105,7 @@ void Linearizer_MVA::Solve(){
 }
 
 
-int Linearizer_MVA::queue_part_index(unsigned int k, vector<unsigned int>& amounts){
+int Linearizer_MVA::queue_part_index(unsigned int k, vector<int>& amounts){
     if (signal == 0){
         return k;
     } else {

@@ -21,7 +21,7 @@ public:
 
     virtual double waitTimeCalc(unsigned int m,int e, Vector4D & queue_lengths_,int partIndex, Vector4D * comma = NULL,int k = 0);
     /*
-    virtual double waitTimeCalc(vector<unsigned int>& population, int k);
+    virtual double waitTimeCalc(vector<int>& population, int k);
 
     virtual double openWait(){
         return serviceTimes[0]/(1-utilisation);

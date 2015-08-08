@@ -28,7 +28,7 @@ double Rolia_MultiStation::waitTimeCalc(unsigned int m,int e, Vector4D & queue_l
 /*
 
 
-double Rolia_MultiStation::pb(vector<unsigned int>& population, int k){
+double Rolia_MultiStation::pb(vector<int>& population, int k){
     double rou = 0.0;
     int sig = 0;
     if (population[k] > 0) {

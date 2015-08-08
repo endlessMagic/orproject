@@ -687,7 +687,7 @@ public:
         Task *task;
         for (int s = 1; s < depth_; ++s) {
             submodel = submodels_[s];
-            think_times_.resize(submodel->clients_.size()+1);
+            think_times_[s].resize(submodel->clients_.size()+1);
             for (int i = 0; i < submodel->clients_.size(); ++i) {
                 task = submodel->clients_[i];
                 if (task->type() == kRefTask) {
@@ -696,7 +696,6 @@ public:
                     think_times_[s][i+1] = task->customer_num()* (1-task->rho())/task->lambda();
                 }
             }
-
         }
     }
 

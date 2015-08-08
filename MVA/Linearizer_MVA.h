@@ -32,7 +32,7 @@ public:
 
     virtual void Solve();
 
-    virtual int queue_part_index(unsigned int k, vector<unsigned int>& amounts);
+    virtual int queue_part_index(unsigned int k, vector<int>& amounts);
     virtual void set_queue_lengths(unsigned int k, vector<int> &amounts);
 
 };

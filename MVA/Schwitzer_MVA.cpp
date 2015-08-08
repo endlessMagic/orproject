@@ -111,11 +111,11 @@ void Schwitzer_MVA::Solve(){
     }
 }
 
-int Schwitzer_MVA::queue_part_index(unsigned int k, vector<unsigned int>& amounts){
+int Schwitzer_MVA::queue_part_index(unsigned int k, vector<int>& amounts){
     return K_;
 }
 
-void Schwitzer_MVA::set_queue_lengths(unsigned int k, vector<unsigned int>& amounts){
+void Schwitzer_MVA::set_queue_lengths(unsigned int k, vector<int>& amounts){
     double sum;
    int entry_size;
     if ( with_traffic_dependency_ == false) {

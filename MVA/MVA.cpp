@@ -105,7 +105,7 @@ void MVA::InitPhaseVar(unsigned int Qsize){
 }
 
 
-void MVA::UpdateOvertakingProb(vector<unsigned int>& amounts){
+void MVA::UpdateOvertakingProb(vector<int>& amounts){
    int entry_size;
    int index;
     //calculate the R_{mk}

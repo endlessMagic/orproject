@@ -53,7 +53,7 @@ void printVector(vector<T> & v){
 
 
 // return the position if a is found in lt, otherwise return 0. Position is indexed from 1
-//int inVector(vector<unsigned int>& lt, int a);
+//int inVector(vector<int>& lt, int a);
 
 // define the type of stations
 enum{
@@ -143,7 +143,7 @@ public:
 
     // helper variable to calculate index of variables related to the population, after initialisation is the index_helper_ with value: (1, 1, N_1+1,..,(N_1+1)*(N_2+1)..(N_(K-1)+1))
     //with the size equal the number of kinds of customerSizes, K+1
-    static vector<unsigned int> index_helper_;
+    static vector<int> index_helper_;
     //to calculation partIndex
     //
     static int partIndexCalc(vector<int>& population);
